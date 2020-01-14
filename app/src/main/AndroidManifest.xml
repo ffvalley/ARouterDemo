@@ -22,8 +22,8 @@
         <activity android:name=".page.UrlSchemeActivity">
             <intent-filter>
                 <data
-                    android:host="m.aliyun.com"
-                    android:scheme="arouter"/>
+                    android:host="yjlove.com"
+                    android:scheme="demo"/>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
