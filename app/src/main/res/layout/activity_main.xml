@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".page.MainActivity">
+
+    <Button
+        android:id="@+id/basic_use"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="基本用法(Activty)" />
+
+    <Button
+        android:id="@+id/overall_degrade"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="全局降级" />
+
+    <Button
+        android:id="@+id/basic_use_service"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="基本用法(Service)" />
+
+<!--    <Button-->
+<!--        android:id="@+id/pretreatment_service"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="预处理服务" />-->
+
+    <Button
+        android:id="@+id/interceptor_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="拦截器处理" />
+
+    <Button
+        android:id="@+id/scheme_url"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SchemeUrl跳转" />
+</LinearLayout>
