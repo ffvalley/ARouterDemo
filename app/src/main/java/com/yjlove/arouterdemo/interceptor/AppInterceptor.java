@@ -11,14 +11,14 @@ import com.alibaba.android.arouter.facade.annotation.Interceptor;
 import com.alibaba.android.arouter.facade.callback.InterceptorCallback;
 import com.alibaba.android.arouter.facade.template.IInterceptor;
 import com.yjlove.arouterdemo.MainLooper;
-import com.yjlove.arouterdemo.RouterConstant;
+import com.yjlove.commonlibrary.RouterConstant;
 import com.yjlove.arouterdemo.page.MainActivity;
 
 @Interceptor(priority = 7, name = "测试用拦截器")
 public class AppInterceptor implements IInterceptor {
 
     private static final String TAG = "AppInterceptor";
-    private static final String INTERCEPTOR = RouterConstant.ACITIVTY_EMPTY;
+    private static final String INTERCEPTOR = RouterConstant.ACTIVITY_EMPTY;
     Context mContext;
 
     @Override
@@ -34,7 +34,7 @@ public class AppInterceptor implements IInterceptor {
             final AlertDialog.Builder ab = new AlertDialog.Builder(context);
             ab.setCancelable(false);
             ab.setTitle("温馨提醒");
-            ab.setMessage(String.format("想要跳转到" + RouterConstant.ACITIVTY_EMPTY + "么？(触发了%s拦截器，拦截了本次跳转)", INTERCEPTOR));
+            ab.setMessage(String.format("想要跳转到" + RouterConstant.ACTIVITY_EMPTY + "么？(触发了%s拦截器，拦截了本次跳转)", INTERCEPTOR));
             ab.setNegativeButton("继续", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

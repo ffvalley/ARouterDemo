@@ -11,10 +11,10 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.yjlove.arouterdemo.ParamsConstant;
 import com.yjlove.arouterdemo.R;
-import com.yjlove.arouterdemo.RouterConstant;
+import com.yjlove.commonlibrary.RouterConstant;
 import com.yjlove.arouterdemo.entity.Person;
 
-@Route(path = RouterConstant.ACITIVTY_BASICUSE)
+@Route(path = RouterConstant.ACTIVITY_BASICUSE)
 public class BasicUseActivity extends AppCompatActivity {
 
     private static final String TAG = "BasicUseActivity";

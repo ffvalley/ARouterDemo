@@ -16,7 +16,7 @@ import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.yjlove.arouterdemo.ParamsConstant;
 import com.yjlove.arouterdemo.R;
-import com.yjlove.arouterdemo.RouterConstant;
+import com.yjlove.commonlibrary.RouterConstant;
 import com.yjlove.arouterdemo.entity.Person;
 import com.yjlove.arouterdemo.service.HelloService;
 
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        findViewById(R.id.pretreatment_service).setOnClickListener(MainActivity.this);
         findViewById(R.id.interceptor_test).setOnClickListener(MainActivity.this);
         findViewById(R.id.scheme_url).setOnClickListener(MainActivity.this);
+        findViewById(R.id.moudle_test).setOnClickListener(MainActivity.this);
     }
 
     @Override
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // 基本用法
             case R.id.basic_use:
                 //build里是URL路径
-                ARouter.getInstance().build(RouterConstant.ACITIVTY_BASICUSE)
+                ARouter.getInstance().build(RouterConstant.ACTIVITY_BASICUSE)
                         .withString(ParamsConstant.MAINACTIVITY_NAME_KEY, "hello 我是ARouter")
                         .withInt(ParamsConstant.MAINACTIVITY_AGE_KEY, 18)
 //                        .withSerializable("data", new Person("Tom", 19))
@@ -94,13 +95,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, helloService.sayHello("Service"), Toast.LENGTH_SHORT).show();
                 break;
 //            case R.id.pretreatment_service:
-//                ARouter.getInstance().build(RouterConstant.ACITIVTY_EMPTY).navigation();
+//                ARouter.getInstance().build(RouterConstant.ACTIVITY_EMPTY).navigation();
 //                break;
             case R.id.interceptor_test:
-                ARouter.getInstance().build(RouterConstant.ACITIVTY_EMPTY).navigation();
+                ARouter.getInstance().build(RouterConstant.ACTIVITY_EMPTY).navigation();
                 break;
             case R.id.scheme_url:
-                ARouter.getInstance().build(RouterConstant.ACITIVTY_WEBVIEW).navigation();
+                ARouter.getInstance().build(RouterConstant.ACTIVITY_WEBVIEW).navigation();
+                break;
+            case R.id.moudle_test:
+                ARouter.getInstance().build(RouterConstant.ACTIVITY_COMPONENTS_01).navigation();
                 break;
         }
     }

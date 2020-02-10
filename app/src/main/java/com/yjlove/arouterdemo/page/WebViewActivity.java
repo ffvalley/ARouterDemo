@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.yjlove.arouterdemo.R;
-import com.yjlove.arouterdemo.RouterConstant;
+import com.yjlove.commonlibrary.RouterConstant;
 
-@Route(path = RouterConstant.ACITIVTY_WEBVIEW)
+@Route(path = RouterConstant.ACTIVITY_WEBVIEW)
 public class WebViewActivity extends AppCompatActivity {
 
     private WebView webView;

@@ -42,4 +42,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="SchemeUrl跳转" />
+
+    <Button
+        android:id="@+id/moudle_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Moudle间跳转" />
 </LinearLayout>

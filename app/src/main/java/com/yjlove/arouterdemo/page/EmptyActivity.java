@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.yjlove.arouterdemo.R;
-import com.yjlove.arouterdemo.RouterConstant;
+import com.yjlove.commonlibrary.RouterConstant;
 
-@Route(path = RouterConstant.ACITIVTY_EMPTY)
+@Route(path = RouterConstant.ACTIVITY_EMPTY)
 public class EmptyActivity extends AppCompatActivity {
 
     @Override

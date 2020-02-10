@@ -1,10 +1,9 @@
 package com.yjlove.arouterdemo;
 
-import android.app.Application;
-
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.yjlove.commonlibrary.BaseApplication;
 
-public class App extends Application {
+public class App extends BaseApplication {
     private boolean isDebugARouter = false;
 
     @Override
